@@ -1,0 +1,55 @@
+.animated-search {
+  width: 340px;
+  margin: 12px auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.animated-search input {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  font-size: 16px;
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid #4a9eff;
+  background: #ffffffdd;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-in-out;
+  color: #0a1a33;
+  font-weight: 500;
+}
+
+.animated-search input::placeholder {
+  color: #6f89a6;
+  transition: 0.3s ease-in-out;
+}
+
+/* Glow effect when focused */
+.animated-search input:focus {
+  border-color: #0066ff;
+  box-shadow: 0 0 12px rgba(0, 102, 255, 0.4);
+  transform: scale(1.02);
+}
+
+.animated-search .icon {
+  position: absolute;
+  right: 12px;
+  font-size: 18px;
+  color: #0066ff;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+/* Icon subtle animation */
+@keyframes iconPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+
+.animated-search input:focus + .icon {
+  color: #004ecb;
+  animation: iconPulse 1.2s infinite;
+}
