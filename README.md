@@ -25,7 +25,7 @@ world in real time.
 
   Layer                  Technologies
   ---------------------- ----------------------------------------
-  Frontend               React / Angular
+  Frontend               React 
   Maps & Visualization   Leaflet / Mapbox / Google Maps API
   Data Source            USGS Earthquake Live Feed API
   Styling                TailwindCSS / Material UI / Custom CSS
